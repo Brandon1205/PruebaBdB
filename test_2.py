@@ -3,7 +3,7 @@
 s = 5
 ss = (s*10)+s
 
-input_array = {"array":[1,2,3,5,6,8,9]}
+input_array = {"array":[-6, -5, 0, 5, 6]}
 
 def square_array_sorted(array):
     output_list = []
@@ -16,7 +16,6 @@ def square_array_sorted(array):
             output_list.append(item_square)
 
     quick_sort(output_list)
-    output_list.sort()
     return output_list
 
 def partition_items(items, low, high):
